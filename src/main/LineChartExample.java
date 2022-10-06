@@ -1,9 +1,13 @@
 package main;
 
+import java.io.File;
+import java.io.IOException;
+
 import javax.swing.JFrame;  
       
 import org.jfree.chart.ChartFactory;  
-import org.jfree.chart.ChartPanel;  
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.ChartUtilities;
 import org.jfree.chart.JFreeChart;  
 import org.jfree.data.category.DefaultCategoryDataset;  
       
@@ -23,6 +27,13 @@ public class LineChartExample extends JFrame {
             dataset  
             );  
       
+        File f = new File("temp.jpeg");
+        try {
+			ChartUtilities.saveChartAsJPEG(f, chart, 600, 400);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         ChartPanel panel = new ChartPanel(chart);  
         
         setContentPane(panel);
