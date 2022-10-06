@@ -27,7 +27,7 @@ public class LineChartExample extends JFrame {
             dataset  
             );  
       
-        File f = new File("temp.jpeg");
+        File f = new File("exportedCharts/temp.jpeg");
         try {
 			ChartUtilities.saveChartAsJPEG(f, chart, 600, 400);
 		} catch (IOException e) {
