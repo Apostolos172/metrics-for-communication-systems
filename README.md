@@ -14,13 +14,10 @@ Some illustrative screenshots of the functionality of the app
 2. Import it into Eclipse.
 3. Build & Run.
 
-<!--
 ### Pre-Built Instructions
 
-1. Download the latest version archive (.zip) from the releases tab.
-2. Extract the folder from the zip.
-3. Run the .jar file.
--->
+1. Download the latest version of .jar file from the releases tab.
+2. Run the .jar file.
 
 ## Built With
 * <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a> - The programming language used.
